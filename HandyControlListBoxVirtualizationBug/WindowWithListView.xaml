@@ -1,0 +1,19 @@
+﻿<Window x:Class="ListBoxVirtualizationBug.WindowWithListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBoxVirtualizationBug"
+        mc:Ignorable="d"
+        Title="WindowWithListView" Height="450" Width="800">
+    <Grid>
+        <ListView VirtualizingStackPanel.VirtualizationMode="Recycling" Focusable="False"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.ScrollUnit="Pixel"
+                  BorderThickness="0" ScrollViewer.CanContentScroll="True" VirtualizingPanel.IsVirtualizing="True"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto" VirtualizingPanel.IsContainerVirtualizable="True"
+                  HorizontalContentAlignment="Stretch"
+                  x:Name="PopupListView" Opacity="70">
+        </ListView>
+    </Grid>
+</Window>

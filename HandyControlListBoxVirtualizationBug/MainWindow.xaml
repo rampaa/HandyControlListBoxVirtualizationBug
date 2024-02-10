@@ -1,0 +1,15 @@
+﻿<Window x:Class="HandyControlListBoxVirtualizationBug.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HandyControlListBoxVirtualizationBug"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="WidthAndHeight">
+    <Grid>
+        <StackPanel>
+            <Button Name="ShowListBoxButton" Click="ShowListBoxButton_Click">Show ListBox</Button>
+            <Button Name="ShowListViewButton" Click="ShowListViewButton_Click">Show ListView</Button>
+        </StackPanel>
+    </Grid>
+</Window>
